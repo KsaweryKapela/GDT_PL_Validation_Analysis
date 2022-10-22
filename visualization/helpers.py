@@ -1,3 +1,6 @@
+import collections
+
+
 def generate_index_dict(column):
     column_dict = {}
 
@@ -7,4 +10,6 @@ def generate_index_dict(column):
         else:
             column_dict[item] = 1
 
-    return column_dict
+    ordered_column_dict = collections.OrderedDict(sorted(column_dict.items()))
+
+    return ordered_column_dict

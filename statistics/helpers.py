@@ -24,3 +24,4 @@ def delete_nan_two_columns(column_1, column_2):
             cleared_column_2.append(column_2[index])
 
     return cleared_column_1, cleared_column_2
+
