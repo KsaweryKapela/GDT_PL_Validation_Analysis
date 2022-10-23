@@ -78,4 +78,5 @@ def run_all_tests():
     correlation_between_gdt_items()
     gdt_cronbachs_alpha()
 
-correlation_between_gdt_items()
+
+print(data.personal_data.sex)
