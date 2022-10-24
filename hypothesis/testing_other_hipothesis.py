@@ -6,6 +6,8 @@ from GDT_PL_Validation_Statistics.statistics.split_correlations import split_cor
 from statistics import *
 import warnings
 
+from GDT_PL_Validation_Statistics.statistics.statistics import r_pearson
+
 warnings.filterwarnings('ignore')
 warnings.simplefilter("ignore")
 

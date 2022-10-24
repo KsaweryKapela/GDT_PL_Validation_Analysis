@@ -79,4 +79,6 @@ def run_all_tests():
     gdt_cronbachs_alpha()
 
 
-print(data.personal_data.sex)
+run_all_tests()
+
+# print(data.personal_data.sex)

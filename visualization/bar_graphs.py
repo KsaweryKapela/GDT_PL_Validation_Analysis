@@ -19,3 +19,4 @@ def bar_graph(raw_column):
     plt.ylabel("People")
 
     plt.show()
+
