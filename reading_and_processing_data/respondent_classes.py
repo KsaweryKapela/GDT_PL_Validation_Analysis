@@ -1,36 +1,10 @@
 class RespondentData:
     def __init__(self, dataframe):
         self.data = dataframe
-        self.sex = self.return_sex()
+        self.sex = self.data['Q37']  # 1 = female, 2 = male
         self.age = [int(item) for item in self.data['Q6']]
-        self.relationship = self.return_relationship()
+        self.relationship = self.data['Q10']  # 1 = True, 2 = False
         # self.city = self.return_city()
-
-    def return_sex(self):
-        sex_data = self.data['Q37']
-        index = 0
-        for item in sex_data:
-            if item == 1:
-                sex_data[index] = 'female'
-            elif item == 2:
-                sex_data[index] = 'male'
-            else:
-                sex_data[index] = 'other'
-            index += 1
-        return sex_data
-
-    def return_relationship(self):
-        relationship_data = self.data['Q10']
-        index = 0
-        for item in relationship_data:
-            if item == 1:
-                relationship_data[index] = True
-            elif item == 2:
-                relationship_data[index] = False
-            else:
-                print(f'Error, cant fit {item}')
-            index += 1
-        return relationship_data
 
 
 class GamingHabits:
