@@ -29,9 +29,9 @@ class Data:
         male_data = []
         female_data = []
         for row in range(self.respondents_number):
-            if self.personal_data.sex[row] == 'male':
+            if self.personal_data.sex[row] == 2:
                 male_data.append(column[row])
-            elif self.personal_data.sex[row] == 'female':
+            elif self.personal_data.sex[row] == 1:
                 female_data.append(column[row])
         return male_data, female_data
 

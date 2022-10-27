@@ -49,6 +49,9 @@ def r_point_biserial(bool_column_raw, int_column_raw):
     result = pointbiserialr(bool_column, int_column)
     print(result)
 
-# def chi_square_GOF(column_raw):
-#     column = delete_nan(column_raw)
-#     chisquare(f_obs=column, f_exp=expected)
+
+def chi_square_GOF(column_raw, expected):
+    column = delete_nan(column_raw)
+    result = chisquare(f_obs=column, f_exp=expected)
+    print(result)
+
